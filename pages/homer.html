@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment Act. 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment Act.3</h1>
+    </header>
+    <div>
+      <nav class="bg-black p-5">
+        <ul class="flex justify-center">
+          <li class="mx-5">
+            <a href="index.html" class="text-white">Home</a>
+          </li>
+          <li class="mx-5">
+            <b><a href="homer.html" class="text-white">HOMER</a></b>
+          </li>
+          <li class="mx-5">
+            <a href="pages/poster.html" class="text-white">Poster</a>
+          </li>
+          <li class="mx-5">
+            <a href="pages/estels.html" class="text-white">Estels</a>
+          </li>
+          <li class="mx-5">
+            <a href="pages/sol.html" class="text-white">Sol</a>
+          </li>
+          <li class="mx-5">
+            <a href="pages/gradient.html" class="text-white">Gradient</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <div>
+        <a href="homer.html">
+          <b><h1>Original (GIF)</h1></b>
+          <p>- %</p>
+          <img src="../images/homer.gif" alt="Example 1" class="w-full" />
+          <div class="image-info"></div>
+        </a>
+      </div>
+
+      <div>
+        <a href="homer.html">
+          <b><h1>GIF -> WEBP</h1></b>
+          <p>-43.2%</p>
+          <img src="../images/homerWEBP.webp" alt="Example 1" class="w-full" />
+          <div class="image-info"></div>
+        </a>
+      </div>
+
+      <div>
+        <a href="homer.html">
+          <b><h1>GIF -> JPG</h1></b>
+          <p>-88%</p>
+          <img src="../images/homerJPG.jpg" alt="Example 1" class="w-full" />
+          <div class="image-info"></div>
+        </a>
+      </div>
+    </main>
+
+    <div class="p-10">
+      <b><h3>What happens with GIF file? Can we use WebP to replace it?</h3></b>
+      <p>
+        WebP is able to replace the GIF file since the format is compatible with
+        animation. JPG isn't.
+      </p>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

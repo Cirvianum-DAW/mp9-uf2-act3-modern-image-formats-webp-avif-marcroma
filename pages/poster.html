@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poster - Formats</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <div>
+      <nav class="bg-black p-5">
+        <ul class="flex justify-center">
+          <li class="mx-5">
+            <a href="../index.html" class="text-white">Home</a>
+          </li>
+          <li class="mx-5">
+            <a href="homer.html" class="text-white">Homer</a>
+          </li>
+          <li class="mx-5">
+            <b><a href="poster.html" class="text-white">POSTER</a></b>
+          </li>
+          <li class="mx-5">
+            <a href="estels.html" class="text-white">Estels</a>
+          </li>
+          <li class="mx-5">
+            <a href="sol.html" class="text-white">Sol</a>
+          </li>
+          <li class="mx-5">
+            <a href="gradient.html" class="text-white">Gradient</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <b><h1>PNG</h1></b>
+        <img src="../images/logotip.png" alt="Example 1" class="w-[50px]" />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>PNG -> JPG</h1></b>
+        <img src="../images/logotipFIFA.jpg" alt="Example 2" class="w-[50px]" />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>PNG -> GIF</h1></b>
+        <img src="../images/logotipFIFA.gif" alt="Example 3" class="w-[50px]" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <hr />
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <b><h1>32-bit -> 24-bit</h1></b>
+        <img
+          src="../images/logotipFIFA_24.bmp"
+          alt="Example 4"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>32-bit -> 8-bit</h1></b>
+        <img
+          src="../images/logotipFIFA_8.bmp"
+          alt="Example 5"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <script src="../scripts/main.js"></script>
+
+    <hr />
+
+    <div class="m-9">
+      <b
+        ><h1 class="text-lg">
+          What format is the most optimal for this type of image and why? Can
+          its size be reduced even more? Would it lose quality?
+        </h1></b
+      >
+      <p>
+        The most optimal format for these kind of pictures is GIF. Since they
+        usually contain simple shapes, and not a lot of color complexity. The
+        size can be reduced even more by reducing the number of colors, but it
+        would lose quality in doing so.
+      </p>
+    </div>
+  </body>
+</html>

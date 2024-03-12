@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient - Formats</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <div>
+      <nav class="bg-black p-5">
+        <ul class="flex justify-center">
+          <li class="mx-5">
+            <a href="../index.html" class="text-white">Home</a>
+          </li>
+          <li class="mx-5">
+            <a href="homer.html" class="text-white">Homer</a>
+          </li>
+          <li class="mx-5">
+            <a href="poster.html" class="text-white">Poster</a>
+          </li>
+          <li class="mx-5">
+            <a href="estels.html" class="text-white">Estels</a>
+          </li>
+          <li class="mx-5">
+            <a href="sol.html" class="text-white">Sol</a>
+          </li>
+          <li class="mx-5">
+            <b><a href="gradient.html" class="text-white">GRADIENT</a></b>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <b><h1>PNG</h1></b>
+        <img
+          src="../images/transparency.png"
+          alt="Example 1"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>PNG -> JPG</h1></b>
+        <img
+          src="../images/transparency.jpg"
+          alt="Example 2"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>PNG -> GIF</h1></b>
+        <img
+          src="../images/transparency.gif"
+          alt="Example 3"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <hr />
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <b><h1>32-bit -> 24-bit</h1></b>
+        <img
+          src="../images/transparency_24.bmp"
+          alt="Example 4"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>32-bit -> 8-bit</h1></b>
+        <img
+          src="../images/transparency_8.bmp"
+          alt="Example 5"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <script src="../scripts/main.js"></script>
+
+    <div class="m-9">
+      <b
+        ><h1 class="text-lg">
+          What is the most optimal format for this type of image and why? What
+          happens when we save it in JPEG format? If our website has a white
+          background, what format would be the most optimal and why?
+        </h1></b
+      >
+      <p>
+        The most optimal format for this type of image is PNG. This is because
+        PNG is a lossless format, meaning that it does not lose any data when
+        compressed. This is important for images with transparency, as it allows
+        the image to maintain its quality when placed on a different background.
+        When saved in JPEG format, the image loses its transparency and the
+        background becomes white. If our website has a white background, the most
+        optimal format would be JPEG, as it is a lossy format and has a smaller
+        file size than PNG.
+      </p>
+    </div>
+  </body>
+</html>
