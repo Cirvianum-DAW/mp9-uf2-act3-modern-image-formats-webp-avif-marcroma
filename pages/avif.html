@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avif - Formats</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <div>
+      <nav class="bg-black p-5">
+        <ul class="flex justify-center">
+          <li class="mx-5">
+            <a href="../index.html" class="text-white">Home</a>
+          </li>
+          <li class="mx-5">
+            <a href="homer.html" class="text-white">Homer</a>
+          </li>
+          <li class="mx-5">
+            <a href="poster.html" class="text-white">Poster</a>
+          </li>
+          <li class="mx-5">
+            <a href="estels.html" class="text-white">Estels</a>
+          </li>
+          <li class="mx-5">
+            <a href="sol.html" class="text-white">Sol</a>
+          </li>
+          <li class="mx-5">
+            <a href="gradient.html" class="text-white">Gradient</a>
+          </li>
+          <li class="mx-5">
+            <b><a href="avif.html" class="text-white">AVIF</a></b>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5"
+    >
+      <div>
+        <b><h1>JPG</h1></b>
+        <p>- %</p>
+        <img src="../images/pexels1.jpg" alt="Example 1" class="w-[50px]" />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>JPG -> AVIF</h1></b>
+        <p>-92%</p>
+        <img
+          src="../images/pexels1AVIF.avif"
+          alt="Example 1"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>JPG -> WEBP</h1></b>
+        <p>-71%</p>
+        <img
+          src="../images/pexels1WEBP.webp"
+          alt="Example 1"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <hr />
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5"
+    >
+      <div>
+        <b><h1>JPG</h1></b>
+        <p>-%</p>
+        <img src="../images/pexels2.jpg" alt="Example 1" class="w-[50px]" />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>JPG -> AVIF</h1></b>
+        <p>-97%</p>
+        <img
+          src="../images/pexels2AVIF.avif"
+          alt="Example 1"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>JPG -> WEBP</h1></b>
+        <p>-91%</p>
+        <img
+          src="../images/pexels2WEBP.webp"
+          alt="Example 1"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <hr />
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-5"
+    >
+      <div>
+        <b><h1>JPG</h1></b>
+        <p>- %</p>
+        <img src="../images/pexels3.jpg" alt="Example 1" class="w-[50px]" />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>JPG -> AVIF</h1></b>
+        <p>-89%</p>
+        <img
+          src="../images/pexels3AVIF.avif"
+          alt="Example 1"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+
+      <div>
+        <b><h1>JPG -> WEBP</h1></b>
+        <p>-81%</p>
+        <img
+          src="../images/pexels3WEBP.webp"
+          alt="Example 1"
+          class="w-[50px]"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <div class="text-base p-10">
+      <b><h1>Final Thoughts</h1></b>
+      <p>
+        I found that the AVIF format allowed for a higher compression rate, all
+        while keeping a good enough quality compared to WEBP. The WEBP format
+        with similar compression rates to AVIF, had a lower quality over the
+        different types of images. <br>
+        That's why I would recommend using AVIF for images that
+        need to be compressed to a smaller size, but still need to keep a good
+        quality.
+      </p>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
